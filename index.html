@@ -26,9 +26,12 @@
 	<style>
 		@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 		body {
-			width: 95%;
-			height: auto;
-			background-color: black;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background: linear-gradient(to bottom, #4C4E52, #000000);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			color: white;
 			font-family: "Roboto", sans-serif;
 			font-optical-sizing: auto;
@@ -50,12 +53,18 @@
 			text-decoration: none;
 			color: lightblue;
 		}
+		.gradienttext {
+			background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
 	</style>
 </head>
 <body>
 	<div style="display: flex; justify-content: center; align-items: center;">
 		<img src="/favicon.ico" style="width: 65px; height: 65px; float: left; margin-right: 15px;" />
-		<h1>0daysophie's home</h1>
+		<h1 class="gradienttext">0daysophie's home</h1>
 	</div>
 	<p>
 		<h3>About me</h3>
